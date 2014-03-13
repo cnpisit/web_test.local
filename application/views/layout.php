@@ -69,13 +69,12 @@
 
 </head>
 <body>
-
 <div id="container">
 	<nav class="main-nav">
 		<ul class="nav nav-pills">
-			<li class="active"><a href="<?php echo base_url().'welcome'?>">Home</a></li>
-			<li><a href="<?php echo base_url().'welcome/hello'?>">Profile</a></li>
-			<li><a href="#">Messages</a></li>
+			<li id="el" class="<?php echo ($this->uri->rsegment(2) == "index"&&$this->uri->rsegment(1)=="welcome")? "active" : "" ?>"><a href="<?php echo base_url().'welcome'?>">Home</a></li>
+			<li id="el1" class="<?php echo ($this->uri->rsegment(2) == "index"&&$this->uri->rsegment(1)=="profileWebservice")? "active" : "" ?>"><a href="<?php echo base_url().'profileWebservice'?>">Profile</a></li>
+			<li id="el2" class="<?php echo ($this->uri->rsegment(2) == "message"&&$this->uri->rsegment(1)=="welcome")? "active" : "" ?>"><a href="<?php echo base_url().'welcome/message'?>">Messages</a></li>
 		</ul>
 	</nav>
 	<hr>
@@ -86,6 +85,8 @@
 <hr>
 	<footer class="footer"><center>Copy left by cn_pisit</center></footer>
 </div>
-
+<script type="text/javascript">
+			
+</script>
 </body>
 </html>

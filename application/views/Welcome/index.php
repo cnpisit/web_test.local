@@ -3,14 +3,14 @@
 
 
 			<header class="row">
-				<div class="logo col-sm-4"><img src="<?php echo base_url().'asset/images/mapring.jpg'?>" alt="logo"></div>
+				<div class="logo col-sm-4"><img src="<?php echo base_url().'asset/images/mapring.jpg'?>" alt="logo"></div>	
 				<div class="advertis col-sm-8"></div>
 			</header>
 			<nav class="inner-nav">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Profile</a></li>
-					<li><a href="#">Messages</a></li>
+					<li id="MyElement" onclick="replaceClass(this)"><a href="#">Home</a></li>
+					<li id="MyElement1" onclick="replaceClass(this)"><a href="#">Profile</a></li>
+					<li id="MyElement2" onclick="replaceClass(this)"><a href="#">Messages</a></li>
 					<li class="date">Date:<?php echo date('d M Y');?></li>
 				</ul>
 
@@ -101,3 +101,13 @@
 
 
 		<script src="<?php echo base_url().'asset/js/bootstrap.min.js'?>"></script>
+		<script src="<?php echo base_url().'asset/js/pisit.js'?>"></script>
+<!-- 		<script type="text/javascript"> -->
+// 			function replaceClass(element){
+// 				document.getElementById("MyElement").className = "";
+// 				document.getElementById("MyElement1").className = "";
+// 				document.getElementById("MyElement2").className = "";
+				
+// 				element.setAttribute("class", "active");
+// 			}	
+<!-- 		</script> -->

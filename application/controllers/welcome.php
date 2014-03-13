@@ -19,7 +19,9 @@ class Welcome extends CI_Controller {
 		$data['template'] = __CLASS__ . '/' . __FUNCTION__;
 		$this->load->view('layout',$data);
 	}
+	
+	public function message	() {
+		$data['template'] = __CLASS__ . '/' . __FUNCTION__;
+		$this->load->view('layout',$data);
+	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
