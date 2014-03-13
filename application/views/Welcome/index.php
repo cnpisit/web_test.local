@@ -100,14 +100,16 @@
 
 
 
-		<script src="<?php echo base_url().'asset/js/bootstrap.min.js'?>"></script>
-		<script src="<?php echo base_url().'asset/js/pisit.js'?>"></script>
-<!-- 		<script type="text/javascript"> -->
-// 			function replaceClass(element){
-// 				document.getElementById("MyElement").className = "";
-// 				document.getElementById("MyElement1").className = "";
-// 				document.getElementById("MyElement2").className = "";
+		
+		
+		<script type="text/javascript">
+			function replaceClass(element){
+				document.getElementById("MyElement").className = "";
+				document.getElementById("MyElement1").className = "";
+				document.getElementById("MyElement2").className = "";
 				
-// 				element.setAttribute("class", "active");
-// 			}	
-<!-- 		</script> -->
+				element.className = "active";
+
+				
+			}	
+ 		</script>

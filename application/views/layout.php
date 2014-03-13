@@ -85,8 +85,7 @@
 <hr>
 	<footer class="footer"><center>Copy left by cn_pisit</center></footer>
 </div>
-<script type="text/javascript">
-			
-</script>
+<script src="<?php echo base_url().'asset/js/jquery-1.11.0.min.js'?>"></script>
+<script src="<?php echo base_url().'asset/js/bootstrap.min.js'?>"></script>
 </body>
 </html>
