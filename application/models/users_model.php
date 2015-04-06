@@ -12,7 +12,7 @@ class Users_model extends CI_Model{
 		
 		$query = $this->db->query('SELECT * FROM users');
 		$result = $query->result();
-		return $result;		
+		return $result;
 	}
 	
 	function login($username, $password){

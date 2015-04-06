@@ -18,8 +18,10 @@ class User extends CI_Controller {
 
 	public function index(){
 		$data['template'] = __CLASS__ . '/' . __FUNCTION__;
-		$resutl = $this->users->getUsers();
-		$data['data'] = $resutl;
+//		$resutl = $this->users->getUsers();
+		$this->load->model('users_model');
+		$result = $this->users_model->getUsers();
+		$data['data'] = $result;
 		$this->load->view('layout',$data);
 		
 	}

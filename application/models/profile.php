@@ -12,6 +12,9 @@ class Profile extends CI_Model{
 		
 		$query = $this->db->query('SELECT * FROM user where username = "pisit"');
 		$result = $query->result();
-		return $result;		
+		return $result;
+	}
+
+	public function index(){
 	}
 }

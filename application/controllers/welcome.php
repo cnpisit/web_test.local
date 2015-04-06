@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('layout',$data);
 	}
 	
-	public function message	() {
+	public function message() {
 		$data['template'] = __CLASS__ . '/' . __FUNCTION__;
 		$this->load->view('layout',$data);
 	}
