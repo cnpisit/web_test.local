@@ -1,5 +1,11 @@
 .DS_Store
 
+#IDE folder
+
+.idea/*
+.settings/*
+
+#file that should be ignore in project
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
